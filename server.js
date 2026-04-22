@@ -262,7 +262,7 @@ app.post("/accounts/:id/withdraw", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("API bancaire opérationnelle. Documentation: /api-docs ou /docs");
+  res.redirect("/api-docs");
 });
 
 const PORT = parseInt(process.env.PORT, 10) || 3000;

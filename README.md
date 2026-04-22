@@ -28,17 +28,20 @@ Le serveur démarre sur le port 3000 (ou PORT défini dans les variables d'envir
 ## Documentation API
 
 Une fois le serveur lancé, accédez à la documentation Swagger :
+
 - http://localhost:3000/api-docs
 - http://localhost:3000/docs
 
 ## Endpoints
 
 ### Comptes
+
 - `POST /accounts` - Créer un compte
 - `GET /accounts` - Lister tous les comptes
 - `GET /accounts/:id` - Obtenir un compte spécifique
 
 ### Transactions
+
 - `POST /accounts/:id/deposit` - Faire un dépôt
 - `POST /accounts/:id/withdraw` - Faire un retrait
 - `GET /accounts/:id/history` - Voir l'historique des transactions
